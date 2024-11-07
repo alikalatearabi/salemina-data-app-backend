@@ -18,10 +18,8 @@ exports.getProductByBarcode = async (req, res) => {
         const product = await Product.findOne({ barcode });
 
         if (!product) {
-            return res.status(200).json({ message: 'Product not found' });
+            return res.status(200).send();
         }
-
-        console.log(product["Main_data_status"])
 
         if (product['Main_data_status'] === '4' || product['Main_data_status'] === '1') {
             return res.json(product); 

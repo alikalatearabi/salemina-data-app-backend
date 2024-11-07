@@ -21,7 +21,7 @@ const productSchema = new mongoose.Schema({
   sugar: { type: String, default: '0' },
   fat: { type: String, default: '0' },
   salt: { type: String, default: '0' },
-  trans_fatty_acids: { type: String, default: '0.14' },
+  trans_fatty_acids: { type: String, default: '0' },
   per_ext: { type: String, default: '' },
   calorie_ext: { type: String, default: '' },
   cal_fat: { type: String, default: '' },
